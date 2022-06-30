@@ -57,16 +57,16 @@ class YYDialog {
 
   YYDialog text(
       {padding,
-      text,
-      color,
-      fontSize,
-      alignment,
-      textAlign,
-      maxLines,
-      textDirection,
-      overflow,
-      fontWeight,
-      fontFamily}) {
+        text,
+        color,
+        fontSize,
+        alignment,
+        textAlign,
+        maxLines,
+        textDirection,
+        overflow,
+        fontWeight,
+        fontFamily}) {
     return this.widget(
       Padding(
         padding: padding ?? EdgeInsets.all(0.0),
@@ -476,10 +476,9 @@ class CustomDialog {
       transitionBuilder: _transitionsBuilder ?? _buildMaterialDialogTransitions,
       pageBuilder: (BuildContext buildContext, Animation<double> animation,
           Animation<double> secondaryAnimation) {
-        return Builder(
-          builder: (BuildContext context) {
-            return _child;
-          },
+        return Container(
+            margin: EdgeInsets.only(bottom: MediaQuery.of(buildContext).viewInsets.bottom),
+            child: _child
         );
       },
     );
