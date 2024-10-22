@@ -22,7 +22,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    namespace "flutter-custom-dialog"
+    namespace "yy.inc.flutter_custom_dialog"
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
