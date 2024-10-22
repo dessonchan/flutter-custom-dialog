@@ -28,7 +28,7 @@ android {
         targetCompatibility JavaVersion.VERSION_17
     }
 
-    compileSdkVersion 28
+    compileSdk 34
 
     defaultConfig {
         minSdkVersion 20
